@@ -1,4 +1,5 @@
-e the official Nginx image from Docker Hub
+
+# Use the official Nginx image from Docker Hub
 FROM nginx:latest
 
 # Copy a custom index.html file into the container
@@ -9,4 +10,3 @@ EXPOSE 80
 
 # Run Nginx in the foreground (required for Docker container)
 CMD ["nginx", "-g", "daemon off;"]
-
